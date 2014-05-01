@@ -14,13 +14,13 @@
 		CEB95DAE1912C128003E9E41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB95DAD1912C128003E9E41 /* main.m */; };
 		CEB95DB21912C128003E9E41 /* OWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB95DB11912C128003E9E41 /* OWAppDelegate.m */; };
 		CEB95DB51912C128003E9E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB95DB31912C128003E9E41 /* Main.storyboard */; };
-		CEB95DB81912C128003E9E41 /* OWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB95DB71912C128003E9E41 /* OWViewController.m */; };
 		CEB95DBA1912C128003E9E41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB95DB91912C128003E9E41 /* Images.xcassets */; };
 		CEB95DC11912C128003E9E41 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB95DC01912C128003E9E41 /* XCTest.framework */; };
 		CEB95DC21912C128003E9E41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB95DA11912C128003E9E41 /* Foundation.framework */; };
 		CEB95DC31912C128003E9E41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB95DA51912C128003E9E41 /* UIKit.framework */; };
 		CEB95DCB1912C128003E9E41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEB95DC91912C128003E9E41 /* InfoPlist.strings */; };
 		CEB95DCD1912C128003E9E41 /* testView_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB95DCC1912C128003E9E41 /* testView_ChallengeTests.m */; };
+		CEB95DD81912C208003E9E41 /* OWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB95DD71912C208003E9E41 /* OWTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		CEB95DB01912C128003E9E41 /* OWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWAppDelegate.h; sourceTree = "<group>"; };
 		CEB95DB11912C128003E9E41 /* OWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OWAppDelegate.m; sourceTree = "<group>"; };
 		CEB95DB41912C128003E9E41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CEB95DB61912C128003E9E41 /* OWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OWViewController.h; sourceTree = "<group>"; };
-		CEB95DB71912C128003E9E41 /* OWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OWViewController.m; sourceTree = "<group>"; };
 		CEB95DB91912C128003E9E41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CEB95DBF1912C128003E9E41 /* testView ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "testView ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB95DC01912C128003E9E41 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CEB95DC81912C128003E9E41 /* testView ChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testView ChallengeTests-Info.plist"; sourceTree = "<group>"; };
 		CEB95DCA1912C128003E9E41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEB95DCC1912C128003E9E41 /* testView_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testView_ChallengeTests.m; sourceTree = "<group>"; };
+		CEB95DD61912C208003E9E41 /* OWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWTableViewController.h; sourceTree = "<group>"; };
+		CEB95DD71912C208003E9E41 /* OWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +115,8 @@
 				CEB95DB01912C128003E9E41 /* OWAppDelegate.h */,
 				CEB95DB11912C128003E9E41 /* OWAppDelegate.m */,
 				CEB95DB31912C128003E9E41 /* Main.storyboard */,
-				CEB95DB61912C128003E9E41 /* OWViewController.h */,
-				CEB95DB71912C128003E9E41 /* OWViewController.m */,
+				CEB95DD61912C208003E9E41 /* OWTableViewController.h */,
+				CEB95DD71912C208003E9E41 /* OWTableViewController.m */,
 				CEB95DB91912C128003E9E41 /* Images.xcassets */,
 				CEB95DA81912C128003E9E41 /* Supporting Files */,
 			);
@@ -250,8 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB95DD81912C208003E9E41 /* OWTableViewController.m in Sources */,
 				CEB95DB21912C128003E9E41 /* OWAppDelegate.m in Sources */,
-				CEB95DB81912C128003E9E41 /* OWViewController.m in Sources */,
 				CEB95DAE1912C128003E9E41 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
